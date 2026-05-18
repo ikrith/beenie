@@ -1,4 +1,4 @@
-# Project Beenie!
+***************Project Beenie!****************
 
 A long-term project focused on the development of a modular quadcopter flight-control system from scratch.
 
@@ -26,3 +26,45 @@ The project begins with foundational control-system development, including hover
 - Progressively move from simulation and testing toward real-world autonomous flight
 
 The primary goal is not just to build a working drone, but to figure out and implement (hopefully) a complete flight-control pipeline, from low-level embedded systems and control loops to higher-level autonomous behaviors. 
+
+## Current Hardware
+
+### Active Test Platform
+- Bee Quad
+      - Flight controller (Speedybee F405 v3)
+      - Compass+GPS (UBlox GPS module, Neo M8)
+      - RC set (Flysky, FS-I6 2.4G 6CH PPM)
+      - Motors and ESCs
+      - 2200 MAh battery
+
+### Secondary Platform
+- Pixhawk-based quadcopter system
+- STM-32 dev board
+
+## Planned Nexts:
+- custom stabilization modes
+- altitude hold systems
+- position hold experimentation
+
+## Immediate Objective:
+- Develop a custom hover / altitude-assist flight mode on the SpeedyBee platform by modifying existing firmware and experimenting with:
+    - stabilization behavior
+    - control loops
+    - altitude hold
+    - hover smoothness
+    - sensor interpretation
+    - real-time tuning
+    
+    The initial focus is on understanding and modifying flight behavior directly on existing hardware.
+
+
+## Current Progress
+
+Successfully achieved:
+- Angle/Horizon modes, default modes in the Speedybee.
+      Tuned the PID to my liking, the flight now is quite stable, no sudden panics, very controlled flight is now possible.
+
+
+## Current issues: // 19 May, 25
+- Rescue mode remains unstable/incomplete/unpredictable.
+      tried different settings, it is still behaving unpredictably.
