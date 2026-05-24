@@ -63,8 +63,11 @@ The primary goal is not just to build a working drone, but to figure out and imp
 Successfully achieved:
 - Angle/Horizon modes, default modes in the Speedybee.
       Tuned the PID to my liking, the flight now is quite stable, no sudden panics, very controlled flight is now possible.
+- Tried resetting the whole FC.
+      Reset and reflashed the SpeedyBee F405 in DFU mode, troubleshooting firmware flashing issues (Permissions issue) and resolving problems caused by incompatible/oversized firmware builds (used an older, <1MB one, suitable for flash memory) while working with Betaflight.
 
 
-## Current issues: // 19 May, 25
+## Current issues: // 
 - Rescue mode remains unstable/incomplete/unpredictable.
       tried different settings, it is still behaving unpredictably.
+- Some Connection issue with USB.
